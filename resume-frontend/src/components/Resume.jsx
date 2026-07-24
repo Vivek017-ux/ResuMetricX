@@ -8,6 +8,9 @@ import { useReactToPrint } from "react-to-print";
 const Resume = ({ data }) => {
   const resumeRef = useRef(null);
 
+  console.log(data.personalInformation);
+  console.log("LinkedIn =", JSON.stringify(data.personalInformation.linkedIn));
+
   const handleDownloadPdf = () => {
     toPng(resumeRef.current, { quality: 1.0, pixelRatio: 2 })
       .then((dataUrl) => {
@@ -70,6 +73,9 @@ const Resume = ({ data }) => {
 
   return (
     <>
+      {/* <pre>
+        {JSON.stringify(data.personalInformation, null, 2)}
+      </pre> */}
       <div
         ref={resumeRef}
         className="max-w-4xl  mx-auto shadow-2xl rounded-lg p-8 space-y-6 bg-base-100 text-base-content border border-gray-200 dark:border-gray-700 transition-all duration-300"

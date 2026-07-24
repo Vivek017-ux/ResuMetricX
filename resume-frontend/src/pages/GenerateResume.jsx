@@ -219,7 +219,7 @@ const GenerateResume = () => {
                 "tel"
               )}
               {renderInput("personalInformation.location", "Location")}
-              {renderInput("personalInformation.linkedin", "LinkedIn", "url")}
+              {renderInput("personalInformation.linkedIn", "LinkedIn", "url")}
               {renderInput("personalInformation.gitHub", "GitHub", "url")}
               {renderInput("personalInformation.portfolio", "Portfolio", "url")}
             </div>
