@@ -118,7 +118,8 @@ const Resume = ({ data }) => {
             {data.personalInformation.gitHub && data.personalInformation.linkedIn && (
               <span className="text-gray-400">|</span>
             )}
-            {data.personalInformation.linkedIn && (
+
+            {data.personalInformation.linkedIn?.trim() && (
               <a
                 href={data.personalInformation.linkedIn}
                 target="_blank"
@@ -128,6 +129,7 @@ const Resume = ({ data }) => {
                 <FaLinkedin className="mr-2" /> LinkedIn
               </a>
             )}
+
           </div>
         </div >
 
