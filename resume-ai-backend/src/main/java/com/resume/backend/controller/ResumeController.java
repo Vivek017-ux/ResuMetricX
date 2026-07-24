@@ -18,6 +18,13 @@ import java.util.Map;
 @CrossOrigin("*")
 public class ResumeController {
 
+    @GetMapping("/test")
+    public String test() {
+        return "Backend Working";
+    }
+
+
+
    private ResumeService resumeService;
 
    public ResumeController(ResumeService resumeService) {
