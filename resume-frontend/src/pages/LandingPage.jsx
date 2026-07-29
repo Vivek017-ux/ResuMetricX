@@ -176,7 +176,7 @@ export default function LandingPage() {
     <div className="bg-base-100">
       {/* ================= HERO ================= */}
       <section className="min-h-screen bg-base-200 relative overflow-hidden">
-        {/* Ambient glow — daisyUI theme colors, rich in dark mode, soft in light mode */}
+        {/* Ambient glow — daisyUI theme colors, dark mode, light mode */}
         <div className="absolute -top-32 -left-32 w-[28rem] h-[28rem] bg-primary/20 rounded-full blur-[100px]"></div>
         <div className="absolute bottom-0 right-0 w-[28rem] h-[28rem] bg-secondary/20 rounded-full blur-[100px]"></div>
         <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-accent/10 rounded-full blur-[100px]"></div>
@@ -237,7 +237,7 @@ export default function LandingPage() {
               transition={{ duration: 1 }}
             >
               <div className="relative rounded-3xl bg-base-100/40 backdrop-blur-xl border border-base-content/10 shadow-2xl overflow-hidden">
-                {/* mock window top bar */}
+                {/* mock  top bar */}
                 <div className="flex items-center gap-1.5 px-5 py-3 border-b border-base-content/10">
                   <span className="w-3 h-3 rounded-full bg-error/60"></span>
                   <span className="w-3 h-3 rounded-full bg-warning/60"></span>

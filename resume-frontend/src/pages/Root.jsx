@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Outlet } from "react-router";
-import Navbar from "../components/navBar";   // 👈 path apne folder structure ke hisaab se adjust karo
+import Navbar from "../components/navBar";   
 
 function Root() {
     const [showNavbar, setShowNavbar] = useState(true);

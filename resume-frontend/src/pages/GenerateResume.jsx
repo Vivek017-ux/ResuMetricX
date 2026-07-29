@@ -46,7 +46,8 @@ const GenerateResume = () => {
   const interestsFields = useFieldArray({ control, name: "interests" });
   const skillsFields = useFieldArray({ control, name: "skills" });
 
-  //handle form submit
+  // Handle Submit form 
+
   const onSubmit = (data) => {
     console.log("Form Data:", data);
     setData({ ...data });
@@ -64,6 +65,7 @@ const GenerateResume = () => {
 
   const handleGenerate = async () => {
     console.log(description);
+
     // server call to get resume
 
     try {
@@ -92,7 +94,7 @@ const GenerateResume = () => {
     setDescription("");
   };
 
-  // ---- Case-file stepper: reflects the real 3-stage sequence of this tool ----
+ 
   const currentStep = showPromptInput ? 1 : showFormUI ? 2 : 3;
   const steps = [
     { n: "01", label: "Describe" },
@@ -360,7 +362,7 @@ const GenerateResume = () => {
               setShowNavbar(true);
             }}
 
-            className="btn btn-outline btn-accent rounded-full px-8"
+             className="btn rounded-full px-8 border-none text-primary-content bg-gradient-to-r from-primary to-secondary shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40 hover:scale-[1.02] transition-all duration-300"
           >
             New Case File
           </button>
@@ -387,7 +389,7 @@ const GenerateResume = () => {
       data-theme={showResumeUI ? "light" : undefined}
       className="min-h-screen py-14 flex flex-col items-center justify-center font-sans bg-base-200 relative overflow-hidden"
     >
-      {/* Ambient glow only during Describe/Refine steps — Review step stays clean & fully light */}
+
       {!showResumeUI && (
         <>
           <div className="absolute top-0 left-1/4 w-[30rem] h-[30rem] bg-primary/20 rounded-full blur-[100px]"></div>
